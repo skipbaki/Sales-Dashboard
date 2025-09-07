@@ -1,5 +1,3 @@
-📂 Project Structure
-
 sales_dashboard_project/
 │
 ├── schema.sql           # SQL schema + sample data
