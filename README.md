@@ -80,19 +80,29 @@ sales_dashboard_project/
 ---
 
 ## 📈 Features
-Total Sales Overview: Key metric showing overall sales performance
 
-Monthly Sales Trends: Line chart visualizing sales over time
+✅ Create a sample sales database with customers, products, orders, and payments
 
-Product Performance: Bar chart showing top products by revenue
+✅ Run SQL queries to calculate KPIs:
 
-Customer Analysis: Bar chart showing top customers by spending
+Total sales
 
-Raw Data Access: Sample view of the underlying customer data
+Monthly sales trend
+
+Top 5 products by revenue
+
+Top 5 customers by spending
+
+✅ Visualize data with matplotlib
+
+✅ Interactive dashboard with Streamlit
+
+✅ Export results as CSV files & PNG charts
 
 ---
 
 ## 🗃️ Database Schema
+
 The SQLite database contains the following tables:
 
 customers: Customer information (name, city, email)
@@ -108,6 +118,7 @@ payments: Payment information for orders
 ---
 
 ## 🔧 Customization
+
 To modify the sample data, edit the INSERT statements in schema.sql and rerun populate_db.py.
 
 To change visualizations, modify the plotting code in dashboard.py or the chart configurations in streamlit_app.py
@@ -115,6 +126,7 @@ To change visualizations, modify the plotting code in dashboard.py or the chart 
 ---
 
 ## 📋 Dependencies
+
 pandas: Data manipulation and analysis
 
 matplotlib: Static visualizations
