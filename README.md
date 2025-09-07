@@ -1,7 +1,6 @@
 # 📊 Sales Dashboard (SQL + Python + Streamlit)
 
 ![Python](https://img.shields.io/badge/Python-3.8+-blue.svg)  
-![SQLite](https://img.shields.io/badge/Database-SQLite-green.svg)  
 ![Streamlit](https://img.shields.io/badge/UI-Streamlit-red.svg)  
 ![License](https://img.shields.io/badge/License-MIT-lightgrey.svg)
 
