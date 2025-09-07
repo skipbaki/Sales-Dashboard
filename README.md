@@ -1,100 +1,82 @@
-Features
-SQLite Database: Relational database with sample sales data
+# 📊 Sales Dashboard (SQL + Python + Streamlit)
 
-Data Analysis: Pre-built SQL queries for key sales metrics
+![Python](https://img.shields.io/badge/Python-3.8+-blue.svg)  
+![SQLite](https://img.shields.io/badge/Database-SQLite-green.svg)  
+![Streamlit](https://img.shields.io/badge/UI-Streamlit-red.svg)  
+![License](https://img.shields.io/badge/License-MIT-lightgrey.svg)
 
-Visualization: Static plots (Matplotlib) and interactive charts (Streamlit)
+## 🚀 Project Overview
+This project demonstrates how to build a **Sales Analytics Dashboard** using:
+- **SQLite** as the database (sample schema & data included)  
+- **SQL** for querying KPIs (total sales, top products, monthly sales trends, etc.)  
+- **Python (pandas & matplotlib)** for data analysis & visualization  
+- **Streamlit** for an interactive web-based dashboard  
 
-Export Functionality: Generate CSV reports and PNG visualizations
+It’s designed as a beginner-friendly **end-to-end data project** that combines **SQL + Python** skills.  
 
-Web Dashboard: Interactive web interface built with Streamlit
+---
 
-Project Structure
-text
-sales-dashboard/
-├── schema.sql           # Database schema and sample data
-├── populate_db.py       # Database initialization script
-├── queries.py           # SQL query functions and CSV export
-├── dashboard.py         # Static visualization generation
-├── streamlit_app.py     # Interactive web dashboard
-├── requirements.txt     # Python dependencies
-├── sales.db            # Generated SQLite database (after setup)
-└── outputs/            # Generated reports and visualizations
-    ├── *.csv           # Data exports
-    ├── *.png           # Visualization images
-    └── kpis.txt        # Key performance indicators
-Setup Instructions
-Clone the repository
+## 📂 Project Structure
 
-bash
-git clone <your-repo-url>
-cd sales-dashboard
-Install dependencies
+├── schema.sql              # Database schema and sample data
+├── populate_db.py          # Database initialization script
+├── sales.db                # Generated SQLite database (after running populate_db.py)
+├── queries.py              # Data query functions and CSV export
+├── dashboard.py            # Static visualization generation
+├── streamlit_app.py        # Interactive web dashboard
+├── requirements.txt        # Python dependencies
+└── outputs/                # Generated outputs (CSVs, plots, KPIs)
+    ├── monthly_sales.csv
+    ├── top_products.csv
+    ├── top_customers.csv
+    ├── total_sales.csv
+    ├── monthly_sales.png
+    ├── top_products.png
+    ├── top_customers.png
+    └── kpis.txt
 
-bash
-pip install -r requirements.txt
-Initialize the database
 
-bash
-python populate_db.py
-Generate reports and visualizations
+---
 
-bash
-python queries.py      # Generates CSV files
-python dashboard.py    # Generates PNG visualizations and KPI file
-Launch the interactive dashboard
+## ⚡ Features
+- ✅ Create a sample sales database with customers, products, orders, and payments  
+- ✅ Run SQL queries to calculate **KPIs**:  
+  - Total sales  
+  - Monthly sales trend  
+  - Top 5 products by revenue  
+  - Top 5 customers by spending  
+- ✅ Visualize data with **matplotlib**  
+- ✅ Interactive dashboard with **Streamlit**  
+- ✅ Export results as **CSV files & PNG charts**  
+
+---
+
+## 🛠️ Installation & Setup
+
+1. **Clone this repository**
+   ```bash
+   git clone https://github.com/yourusername/sales-dashboard.git
+   cd sales-dashboard
+   
+2. **Install dependencies**
+   ```bash
+   pip install -r requirements.txt
+
+3. **Database Setup**
+   ```bash
+   python populate_db.py
+
+## Generate Reports and Visualizations
+1. **Export data to CSV files:**
+   ```bash
+   python queries.py
+2. **Generate static visualizations:**
+   ```bash
+   python dashboard.py
+
+## Launch Interactive Dashboard
+**Start the Streamlit web application:**
 
 bash
 streamlit run streamlit_app.py
-Database Schema
-The application uses a relational database with the following tables:
-
-customers: Customer information
-
-products: Product catalog
-
-orders: Order records
-
-order_items: Individual items within orders
-
-payments: Payment transactions
-
-Available Metrics
-The dashboard provides insights into:
-
-Total sales revenue
-
-Monthly sales trends
-
-Top products by revenue
-
-Top customers by spending
-
-Raw data exploration
-
-Technologies Used
-Python: Data processing and application logic
-
-SQLite: Database management
-
-Pandas: Data manipulation and analysis
-
-Matplotlib: Static visualization
-
-Streamlit: Interactive web dashboard
-
-Usage
-After setup, access the interactive dashboard by running streamlit run streamlit_app.py and navigating to the local URL provided (typically http://localhost:8501).
-
-The application will display:
-
-Key performance indicators at the top
-
-Interactive charts for sales trends
-
-Bar charts for top products and customers
-
-Sample raw data from the database
-
-Customization
-You can modify the database schema in schema.sql or add new queries in queries.py to extend the functionality. The Streamlit dashboard in streamlit_app.py can be customized to display additional metrics or visualizations.
+The dashboard will open in your default web browser at http://localhost:8501. 
