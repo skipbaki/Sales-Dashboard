@@ -32,7 +32,16 @@ It’s designed as a beginner-friendly end-to-end data project that combines SQL
 
 ---
 
+## Prerequisites
+- PostgreSQL installed and running
+- A database named 'sales_dashboard' created in PostgreSQL
+
+---
+
 ## 🛠️ Installation & Setup
+
+## Note:
+Make sure your PostgreSQL server is running before executing the scripts.
 
 1. **Clone this repository**
    ```bash
