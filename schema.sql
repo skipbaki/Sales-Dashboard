@@ -1,8 +1,8 @@
-DROP TABLE IF EXISTS order_items;
-DROP TABLE IF EXISTS payments;
-DROP TABLE IF EXISTS orders;
-DROP TABLE IF EXISTS products;
-DROP TABLE IF EXISTS customers;
+DROP TABLE IF EXISTS order_items ;
+DROP TABLE IF EXISTS payments ;
+DROP TABLE IF EXISTS orders ;
+DROP TABLE IF EXISTS products ;
+DROP TABLE IF EXISTS customers ;
 
 CREATE TABLE customers (
   customer_id SERIAL PRIMARY KEY,
@@ -78,6 +78,6 @@ INSERT INTO payments (order_id, amount, payment_date, method) VALUES (1, 54.99, 
 INSERT INTO payments (order_id, amount, payment_date, method) VALUES (2, 149.99, '2025-06-21', 'netbanking');
 INSERT INTO payments (order_id, amount, payment_date, method) VALUES (3, 42.47, '2025-07-01', 'card');
 INSERT INTO payments (order_id, amount, payment_date, method) VALUES (4, 59.99, '2025-07-15', 'upi');
-INSERT INTO payments (order_id, amount, payment_date, method) VALUES (5, 59.98, '2025-08-05', 'card');
-INSERT INTO payments (order_id, amount, payment_date, method) VALUES (6, 149.99, '2025-08-20', 'card');
+INSERT INTO payments (order_id, amount, payment_date, method) VALUES (5, 59.98, '2025-08-05', 'cash');
+INSERT INTO payments (order_id, amount, payment_date, method) VALUES (6, 149.99, '2025-08-20', 'cash');
 INSERT INTO payments (order_id, amount, payment_date, method) VALUES (7, 12.50, '2025-09-01', 'upi');
