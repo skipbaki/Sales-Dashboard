@@ -65,7 +65,7 @@ sales_dashboard_project/
 
 4. **Run the Streamlit dashboard**
    ```bash
-   streamlit run streamlit_app.py
+   streamlit run streamlit.py
 
 ---
 
