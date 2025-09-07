@@ -1,14 +1,19 @@
 import os
-import psycopg2
-from config import DB_CONFIG
+from config import USE_SQLITE, DB_PATH, DB_CONFIG
 
 schema_path = os.path.join(os.path.dirname(__file__), "schema.sql")
 
-# Connect to PostgreSQL
-conn = psycopg2.connect(**DB_CONFIG)
-cur = conn.cursor()
+if USE_SQLITE:
+    import sqlite3
+    if os.path.exists(DB_PATH):
+        os.remove(DB_PATH)
+    conn = sqlite3.connect(DB_PATH)
+    cur = conn.cursor()
+else:
+    import psycopg2
+    conn = psycopg2.connect(**DB_CONFIG)
+    cur = conn.cursor()
 
-# Read and execute schema.sql
 with open(schema_path, "r") as f:
     sql = f.read()
 
@@ -19,10 +24,13 @@ for command in commands:
         try:
             cur.execute(command)
         except Exception as e:
-            print(f"Error executing command: {command}")
-            print(f"Error: {e}")
+            print(f"Note: {e}")
 
 conn.commit()
 cur.close()
 conn.close()
-print("Database schema created and populated successfully.")
+
+if USE_SQLITE:
+    print("SQLite database created at:", DB_PATH)
+else:
+    print("PostgreSQL database populated successfully!")
