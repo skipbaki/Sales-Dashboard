@@ -13,7 +13,7 @@ DB_CONFIG = {
 }
 
 # For quick testing - set to True if PostgreSQL isn't working
-USE_SQLITE = True
+USE_SQLITE = False
 
 if USE_SQLITE:
     BASE_DIR = os.path.dirname(__file__)
