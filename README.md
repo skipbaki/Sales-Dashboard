@@ -80,7 +80,8 @@ It’s designed as a beginner-friendly **end-to-end data project** that combines
 ```bash
 streamlit run streamlit_app.py
 
-**The dashboard will open in your default web browser at http://localhost:8501**
+The dashboard will open in your default web browser at http://localhost:8501
+```
 
 📈 Features
 Total Sales Overview: Key metric showing overall sales performance
