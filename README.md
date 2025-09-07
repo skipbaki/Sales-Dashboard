@@ -66,6 +66,12 @@ It’s designed as a beginner-friendly **end-to-end data project** that combines
    ```bash
    python populate_db.py
 
+4. **Run the Streamlit dashboard**
+   ```bash
+   streamlit run streamlit_app.py
+
+---
+
 ## Generate Reports and Visualizations
 1. **Export data to CSV files:**
    ```bash
