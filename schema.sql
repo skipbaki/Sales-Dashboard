@@ -1,8 +1,8 @@
-DROP TABLE IF EXISTS order_items CASCADE;
-DROP TABLE IF EXISTS payments CASCADE;
-DROP TABLE IF EXISTS orders CASCADE;
-DROP TABLE IF EXISTS products CASCADE;
-DROP TABLE IF EXISTS customers CASCADE;
+DROP TABLE IF EXISTS order_items;
+DROP TABLE IF EXISTS payments;
+DROP TABLE IF EXISTS orders;
+DROP TABLE IF EXISTS products;
+DROP TABLE IF EXISTS customers;
 
 CREATE TABLE customers (
   customer_id SERIAL PRIMARY KEY,
@@ -44,10 +44,10 @@ CREATE TABLE payments (
   FOREIGN KEY (order_id) REFERENCES orders(order_id)
 );
 
-INSERT INTO customers (name, city, email) VALUES ('Baki', 'Mumbai', 'baki@example.com');
-INSERT INTO customers (name, city, email) VALUES ('Partha', 'Delhi', 'partha@example.com');
+INSERT INTO customers (name, city, email) VALUES ('Baki', 'Bengaluru', 'baki@example.com');
+INSERT INTO customers (name, city, email) VALUES ('Partha', 'Assam', 'partha@example.com');
 INSERT INTO customers (name, city, email) VALUES ('Anurag', 'Bengaluru', 'anurag@example.com');
-INSERT INTO customers (name, city, email) VALUES ('Aravind', 'Chennai', 'aravind@example.com');
+INSERT INTO customers (name, city, email) VALUES ('Aravind', 'Hyderabad', 'aravind@example.com');
 INSERT INTO customers (name, city, email) VALUES ('Abdur', 'Mumbai', 'abdur@example.com');
 
 INSERT INTO products (name, category, price) VALUES ('Keyboard', 'Accessories', 29.99);
