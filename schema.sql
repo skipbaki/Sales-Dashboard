@@ -1,34 +1,32 @@
-PRAGMA foreign_keys = ON;
-
-DROP TABLE IF EXISTS order_items;
-DROP TABLE IF EXISTS payments;
-DROP TABLE IF EXISTS orders;
-DROP TABLE IF EXISTS products;
-DROP TABLE IF EXISTS customers;
+DROP TABLE IF EXISTS order_items CASCADE;
+DROP TABLE IF EXISTS payments CASCADE;
+DROP TABLE IF EXISTS orders CASCADE;
+DROP TABLE IF EXISTS products CASCADE;
+DROP TABLE IF EXISTS customers CASCADE;
 
 CREATE TABLE customers (
-  customer_id INTEGER PRIMARY KEY AUTOINCREMENT,
+  customer_id SERIAL PRIMARY KEY,
   name TEXT NOT NULL,
   city TEXT,
   email TEXT
 );
 
 CREATE TABLE products (
-  product_id INTEGER PRIMARY KEY AUTOINCREMENT,
+  product_id SERIAL PRIMARY KEY,
   name TEXT NOT NULL,
   category TEXT,
   price REAL
 );
 
 CREATE TABLE orders (
-  order_id INTEGER PRIMARY KEY AUTOINCREMENT,
+  order_id SERIAL PRIMARY KEY,
   customer_id INTEGER,
   order_date TEXT,
   FOREIGN KEY (customer_id) REFERENCES customers(customer_id)
 );
 
 CREATE TABLE order_items (
-  order_item_id INTEGER PRIMARY KEY AUTOINCREMENT,
+  order_item_id SERIAL PRIMARY KEY,
   order_id INTEGER,
   product_id INTEGER,
   quantity INTEGER,
@@ -38,7 +36,7 @@ CREATE TABLE order_items (
 );
 
 CREATE TABLE payments (
-  payment_id INTEGER PRIMARY KEY AUTOINCREMENT,
+  payment_id SERIAL PRIMARY KEY,
   order_id INTEGER,
   amount REAL,
   payment_date TEXT,
