@@ -65,7 +65,7 @@ Make sure your PostgreSQL server is running before executing the scripts.
     DB_HOST=localhost
     DB_NAME=sales_dashboard
     DB_USER=postgres
-    DB_PASSWORD=password_here
+    DB_PASSWORD=your_pass
     DB_PORT=5432
 
 5. **Initialize Database**
