@@ -114,8 +114,6 @@ Extend streamlit_app.py to add new interactive elements
 
 ## 🔮 Future Improvements
 
-## 🚀 Future Improvements
-
 - **User Authentication**: Add login system for multiple users with role-based access
 - **Advanced Visualizations**: Integrate Plotly or D3.js for interactive charts
 - **Predictive Analytics**: Implement machine learning for sales forecasting
