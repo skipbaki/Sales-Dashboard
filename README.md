@@ -21,15 +21,11 @@ This project demonstrates how to build a Sales Analytics Dashboard using:
 
 ## ⚡ Features
 
-Interactive Dashboard: Real-time visualization of sales data through Streamlit
-
-Sales Analytics: Monthly sales trends, top products, and customer insights
-
-Data Export: Generate CSV reports and visual charts for further analysis
-
-PostgreSQL Integration: Robust database management with proper relationships
-
-Automated Reporting: Scripts to generate visualizations and export data
+- Interactive Dashboard: Real-time visualization of sales data through Streamlit
+- Sales Analytics: Monthly sales trends, top products, and customer insights
+- Data Export: Generate CSV reports and visual charts for further analysis
+- PostgreSQL Integration: Robust database management with proper relationships
+- Automated Reporting: Scripts to generate visualizations and export data
 
 ---
 
