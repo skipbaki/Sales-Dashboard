@@ -74,12 +74,11 @@ Install PostgreSQL on your system
 Create a database named sales_dashboard
 
 Update the .env file with your database credentials:
-```bash
  DB_HOST=localhost
  DB_NAME=sales_dashboard
  DB_USER=your_username
  DB_PASSWORD=your_password
- DB_PORT=5432
+ DB_PORT=1122
 
 4. **Initialize Database**
    ```bash
