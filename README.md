@@ -68,23 +68,23 @@ Make sure your PostgreSQL server is running before executing the scripts.
    pip install -r requirements.txt
 
 3. **Set up PostgreSQL**
+   ```bash
+   Install PostgreSQL on your system
 
-Install PostgreSQL on your system
+   Create a database named sales_dashboard
 
-Create a database named sales_dashboard
+   Update the .env file with your database credentials:
+    DB_HOST=localhost
+    DB_NAME=sales_dashboard
+    DB_USER=your_username
+    DB_PASSWORD=your_password
+    DB_PORT=1122
 
-Update the .env file with your database credentials:
- DB_HOST=localhost
- DB_NAME=sales_dashboard
- DB_USER=your_username
- DB_PASSWORD=your_password
- DB_PORT=1122
-
-4. **Initialize Database**
+5. **Initialize Database**
    ```bash
    python populate_db.py
 
-5. **Run the Streamlit dashboard**
+6. **Run the Streamlit dashboard**
    ```bash
    streamlit run streamlit.py
 
