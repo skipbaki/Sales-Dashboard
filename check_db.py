@@ -16,4 +16,4 @@ else:
         conn.close()
     except Exception as e:
         print(f"PostgreSQL connection failed: {e}")
-        print("\n💡 Tip: Set USE_SQLITE = True in config.py to use SQLite instead")
+        print("\n Set USE_SQLITE = True in config.py to use SQLite instead")
