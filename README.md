@@ -20,15 +20,30 @@ It’s designed as a beginner-friendly end-to-end data project that combines SQL
 ---
 
 ## ⚡ Features
-- ✅ Create a sample sales database with customers, products, orders, and payments  
-- ✅ Run SQL queries to calculate **KPIs**:  
-  - Total sales  
-  - Monthly sales trend  
-  - Top 5 products by revenue  
-  - Top 5 customers by spending  
-- ✅ Visualize data with **matplotlib**  
-- ✅ Interactive dashboard with **Streamlit**  
-- ✅ Export results as **CSV files & PNG charts**  
+
+Interactive Dashboard: Real-time visualization of sales data through Streamlit
+
+Sales Analytics: Monthly sales trends, top products, and customer insights
+
+Data Export: Generate CSV reports and visual charts for further analysis
+
+PostgreSQL Integration: Robust database management with proper relationships
+
+Automated Reporting: Scripts to generate visualizations and export data
+
+---
+
+## 🛠️ Tech Stack
+
+Backend: Python 3.x
+
+Database: PostgreSQL
+
+Visualization: Matplotlib, Streamlit
+
+Data Processing: Pandas
+
+Database Connection: Psycopg2
 
 ---
 
@@ -52,11 +67,25 @@ Make sure your PostgreSQL server is running before executing the scripts.
    ```bash
    pip install -r requirements.txt
 
-3. **Database Setup**
+3. **Set up PostgreSQL**
+
+Install PostgreSQL on your system
+
+Create a database named sales_dashboard
+
+Update the .env file with your database credentials:
+```bash
+ DB_HOST=localhost
+ DB_NAME=sales_dashboard
+ DB_USER=your_username
+ DB_PASSWORD=your_password
+ DB_PORT=5432
+
+4. **Initialize Database**
    ```bash
    python populate_db.py
 
-4. **Run the Streamlit dashboard**
+5. **Run the Streamlit dashboard**
    ```bash
    streamlit run streamlit.py
 
@@ -72,73 +101,39 @@ Make sure your PostgreSQL server is running before executing the scripts.
 
 ---
 
-## 📈 Features
-
-✅ Create a sample sales database with customers, products, orders, and payments
-
-✅ Run SQL queries to calculate KPIs:
-
-Total sales
-
-Monthly sales trend
-
-Top 5 products by revenue
-
-Top 5 customers by spending
-
-✅ Visualize data with matplotlib
-
-✅ Interactive dashboard with Streamlit
-
-✅ Export results as CSV files & PNG charts
-
----
-
-## 🗃️ Database Schema
-
-The SQLite database contains the following tables:
-
-customers: Customer information (name, city, email)
-
-products: Product details (name, category, price)
-
-orders: Order records with timestamps
-
-order_items: Individual items within orders
-
-payments: Payment information for orders
-
----
-
 ## 🔧 Customization
 
-To modify the sample data, edit the INSERT statements in schema.sql and rerun populate_db.py.
+Modify schema.sql to change the database structure #edit the INSERT statements in schema.sql and rerun populate_db.py
 
-To change visualizations, modify the plotting code in dashboard.py or the chart configurations in streamlit_app.py
+Update queries.py to add new analytical queries
 
----
+Customize dashboard.py to create different visualizations #modify the plotting code in dashboard.py or the chart configurations in streamlit.py
 
-## 📋 Dependencies
-
-pandas: Data manipulation and analysis
-
-matplotlib: Static visualizations
-
-streamlit: Interactive web dashboard
-
-sqlite3: Database operations (included in Python standard library)
+Extend streamlit_app.py to add new interactive elements
 
 ---
 
 ## 🔮 Future Improvements
 
-Add filters (by city, product category, date range)
+User Authentication: Add login system for multiple users with role-based access
 
-Deploy dashboard online with Streamlit Cloud
+Advanced Visualizations: Integrate Plotly or D3.js for interactive charts
 
-Add user authentication for secure dashboards
+Predictive Analytics: Implement machine learning for sales forecasting
 
-Switch database to PostgreSQL/MySQL for larger datasets
+Email Reports: Automated scheduled report delivery via email
+
+Mobile Responsive: Optimize Streamlit dashboard for mobile devices
+
+Data Import/Export: Add functionality to import data from CSV/Excel files
+
+Real-time Data: Implement live data updates and websocket connections
+
+Advanced Filtering: Add date range filters and product/category filters
+
+Docker Support: Containerize the application for easier deployment
+
+Cloud Deployment: Prepare for deployment on AWS, Heroku, or DigitalOcean
 
 ---
 
