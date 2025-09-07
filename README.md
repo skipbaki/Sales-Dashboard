@@ -105,7 +105,7 @@ Make sure your PostgreSQL server is running before executing the scripts.
 - Modify `schema.sql` to change the database structure
 - Update `queries.py` to add new analytical queries
 - Customize `dashboard.py` to create different visualizations
-- Extend `streamlit_app.py` to add new interactive elements
+- Extend `streamlit.py` to add new interactive elements
 
 ---
 
