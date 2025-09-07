@@ -63,10 +63,10 @@ Make sure your PostgreSQL server is running before executing the scripts.
 
    Update the .env file with your database credentials:
     DB_HOST=localhost
-   DB_NAME=sales_dashboard
-   DB_USER=postgres
-   DB_PASSWORD=password_here
-   DB_PORT=5432
+    DB_NAME=sales_dashboard
+    DB_USER=postgres
+    DB_PASSWORD=password_here
+    DB_PORT=5432
 
 5. **Initialize Database**
    ```bash
