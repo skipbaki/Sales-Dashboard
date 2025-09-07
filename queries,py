@@ -1,10 +1,13 @@
-import sqlite3, os, pandas as pd
-BASE_DIR = os.path.dirname(__file__)
-db_path = os.path.join(BASE_DIR, "sales.db")
+import os
+import pandas as pd
+import psycopg2
+from config import DB_CONFIG
 
 def run_query(sql):
-    with sqlite3.connect(db_path) as conn:
-        return pd.read_sql_query(sql, conn)
+    conn = psycopg2.connect(**DB_CONFIG)
+    df = pd.read_sql_query(sql, conn)
+    conn.close()
+    return df
 
 def total_sales():
     sql = "SELECT SUM(amount) AS total_sales FROM payments;"
@@ -12,11 +15,11 @@ def total_sales():
 
 def monthly_sales():
     sql = """
-SELECT substr(order_date,1,7) AS month, 
+SELECT TO_CHAR(TO_DATE(order_date, 'YYYY-MM-DD'), 'YYYY-MM') AS month, 
        SUM(oi.quantity * oi.unit_price) AS monthly_sales
 FROM orders o
 JOIN order_items oi ON o.order_id = oi.order_id
-GROUP BY month
+GROUP BY TO_CHAR(TO_DATE(order_date, 'YYYY-MM-DD'), 'YYYY-MM')
 ORDER BY month;
 """
     return run_query(sql)
@@ -45,9 +48,9 @@ LIMIT {limit};
     return run_query(sql)
 
 if __name__ == '__main__':
-    os.makedirs(os.path.join(BASE_DIR, "outputs"), exist_ok=True)
-    total_sales().to_csv(os.path.join(BASE_DIR, "outputs", "total_sales.csv"), index=False)
-    monthly_sales().to_csv(os.path.join(BASE_DIR, "outputs", "monthly_sales.csv"), index=False)
-    top_products().to_csv(os.path.join(BASE_DIR, "outputs", "top_products.csv"), index=False)
-    top_customers().to_csv(os.path.join(BASE_DIR, "outputs", "top_customers.csv"), index=False)
+    os.makedirs(os.path.join(os.path.dirname(__file__), "outputs"), exist_ok=True)
+    total_sales().to_csv(os.path.join(os.path.dirname(__file__), "outputs", "total_sales.csv"), index=False)
+    monthly_sales().to_csv(os.path.join(os.path.dirname(__file__), "outputs", "monthly_sales.csv"), index=False)
+    top_products().to_csv(os.path.join(os.path.dirname(__file__), "outputs", "top_products.csv"), index=False)
+    top_customers().to_csv(os.path.join(os.path.dirname(__file__), "outputs", "top_customers.csv"), index=False)
     print("KPI CSVs saved to outputs/")
