@@ -70,7 +70,7 @@ Make sure your PostgreSQL server is running before executing the scripts.
 
 5. **Initialize Database**
    ```bash
-   python populate_db.py
+   python products_db.py
 
 ---
 
