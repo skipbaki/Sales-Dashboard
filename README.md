@@ -75,14 +75,14 @@ It’s designed as a beginner-friendly **end-to-end data project** that combines
    python dashboard.py
 
 ## Launch Interactive Dashboard
-**Start the Streamlit web application:**
 
+**Start the Streamlit web application:**
 ```bash
 streamlit run streamlit_app.py
 
 ---
 
-📈 Features
+## 📈 Features
 Total Sales Overview: Key metric showing overall sales performance
 
 Monthly Sales Trends: Line chart visualizing sales over time
@@ -96,7 +96,7 @@ Raw Data Access: Sample view of the underlying customer data
 ---
 
 
-🗃️ Database Schema
+## 🗃️ Database Schema
 The SQLite database contains the following tables:
 
 customers: Customer information (name, city, email)
@@ -111,7 +111,7 @@ payments: Payment information for orders
 
 ---
 
-🔧 Customization
+## 🔧 Customization
 To modify the sample data, edit the INSERT statements in schema.sql and rerun populate_db.py.
 
 To change visualizations, modify the plotting code in dashboard.py or the chart configurations in streamlit_app.py
@@ -119,7 +119,7 @@ To change visualizations, modify the plotting code in dashboard.py or the chart 
 ---
 
 
-📋 Dependencies
+## 📋 Dependencies
 pandas: Data manipulation and analysis
 
 matplotlib: Static visualizations
@@ -131,7 +131,7 @@ sqlite3: Database operations (included in Python standard library)
 ---
 
 
-🔮 Future Improvements
+## 🔮 Future Improvements
 
 Add filters (by city, product category, date range)
 
