@@ -102,13 +102,10 @@ Make sure your PostgreSQL server is running before executing the scripts.
 
 ## 🔧 Customization
 
-Modify schema.sql to change the database structure #edit the INSERT statements in schema.sql and rerun populate_db.py
-
-Update queries.py to add new analytical queries
-
-Customize dashboard.py to create different visualizations #modify the plotting code in dashboard.py or the chart configurations in streamlit.py
-
-Extend streamlit_app.py to add new interactive elements
+- Modify `schema.sql` to change the database structure
+- Update `queries.py` to add new analytical queries
+- Customize `dashboard.py` to create different visualizations
+- Extend `streamlit_app.py` to add new interactive elements
 
 ---
 
