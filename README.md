@@ -1,7 +1,6 @@
-# 📊 Sales Dashboard (SQL + Python + Streamlit)
+# 📊 Sales Dashboard (SQL + Python)
 
 ![Python](https://img.shields.io/badge/Python-3.8+-blue.svg)  
-![Streamlit](https://img.shields.io/badge/UI-Streamlit-red.svg)
 ![PostgreSQL](https://img.shields.io/badge/Database-PostgreSQL-blue.svg)
 ![License](https://img.shields.io/badge/License-MIT-lightgrey.svg)
 
@@ -12,8 +11,7 @@ A sales analytics dashboard built with Python and PostgreSQL. This project featu
 This project demonstrates how to build a Sales Analytics Dashboard using:
 - **SQLite** as the database (sample schema & data included)  
 - **SQL** for querying KPIs (total sales, top products, monthly sales trends, etc.)  
-- **Python (pandas & matplotlib)** for data analysis & visualization  
-- **Streamlit** for an interactive web-based dashboard  
+- **Python (pandas & matplotlib)** for data analysis & visualization
 
 **It’s designed as a beginner-friendly end-to-end data project that combines SQL + Python skills** 
 
@@ -21,7 +19,6 @@ This project demonstrates how to build a Sales Analytics Dashboard using:
 
 ## ⚡ Features
 
-- Interactive Dashboard: Real-time visualization of sales data through Streamlit
 - Sales Analytics: Monthly sales trends, top products, and customer insights
 - Data Export: Generate CSV reports and visual charts for further analysis
 - PostgreSQL Integration: Robust database management with proper relationships
@@ -35,7 +32,7 @@ Backend: Python
 
 Database: PostgreSQL
 
-Visualization: Matplotlib, Streamlit
+Visualization: Matplotlib
 
 Data Processing: Pandas
 
@@ -71,18 +68,14 @@ Make sure your PostgreSQL server is running before executing the scripts.
 
    Update the .env file with your database credentials:
     DB_HOST=localhost
-    DB_NAME=sales_dashboard
-    DB_USER=your_username
-    DB_PASSWORD=your_password
-    DB_PORT=1122
+   DB_NAME=sales_dashboard
+   DB_USER=postgres
+   DB_PASSWORD=password_here
+   DB_PORT=5432
 
 5. **Initialize Database**
    ```bash
    python populate_db.py
-
-6. **Run the Streamlit dashboard**
-   ```bash
-   streamlit run streamlit.py
 
 ---
 
@@ -101,7 +94,6 @@ Make sure your PostgreSQL server is running before executing the scripts.
 - Modify `schema.sql` to change the database structure
 - Update `queries.py` to add new analytical queries
 - Customize `dashboard.py` to create different visualizations
-- Extend `streamlit.py` to add new interactive elements
 
 ---
 
