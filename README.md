@@ -18,6 +18,7 @@ It’s designed as a beginner-friendly **end-to-end data project** that combines
 
 ## 📂 Project Structure
 
+
 ├── schema.sql              # Database schema and sample data
 ├── populate_db.py          # Database initialization script
 ├── sales.db                # Generated SQLite database (after running populate_db.py)
