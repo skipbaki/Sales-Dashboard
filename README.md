@@ -77,6 +77,7 @@ It’s designed as a beginner-friendly **end-to-end data project** that combines
 ## Launch Interactive Dashboard
 **Start the Streamlit web application:**
 
-bash
+```bash
 streamlit run streamlit_app.py
+
 The dashboard will open in your default web browser at http://localhost:8501. 
