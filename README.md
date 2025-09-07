@@ -114,29 +114,23 @@ Extend streamlit_app.py to add new interactive elements
 
 ## 🔮 Future Improvements
 
-User Authentication: Add login system for multiple users with role-based access
+## 🚀 Future Improvements
 
-Advanced Visualizations: Integrate Plotly or D3.js for interactive charts
-
-Predictive Analytics: Implement machine learning for sales forecasting
-
-Email Reports: Automated scheduled report delivery via email
-
-Mobile Responsive: Optimize Streamlit dashboard for mobile devices
-
-Data Import/Export: Add functionality to import data from CSV/Excel files
-
-Real-time Data: Implement live data updates and websocket connections
-
-Advanced Filtering: Add date range filters and product/category filters
-
-Docker Support: Containerize the application for easier deployment
-
-Cloud Deployment: Prepare for deployment on AWS, Heroku, or DigitalOcean
+- **User Authentication**: Add login system for multiple users with role-based access
+- **Advanced Visualizations**: Integrate Plotly or D3.js for interactive charts
+- **Predictive Analytics**: Implement machine learning for sales forecasting
+- **Email Reports**: Automated scheduled report delivery via email
+- **Mobile Responsive**: Optimize Streamlit dashboard for mobile devices
+- **Data Import/Export**: Add functionality to import data from CSV/Excel files
+- **Real-time Data**: Implement live data updates and websocket connections
+- **Advanced Filtering**: Add date range filters and product/category filters
+- **Docker Support**: Containerize the application for easier deployment
+- **Cloud Deployment**: Prepare for deployment on AWS, Heroku, or DigitalOcean
 
 ---
 
 ## 🤝 Contributing
+
 Feel free to submit issues and enhancement requests!
 
 ---
