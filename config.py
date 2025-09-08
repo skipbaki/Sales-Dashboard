@@ -3,7 +3,6 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
-# Database configuration
 DB_CONFIG = {
     'host': os.getenv('DB_HOST', 'localhost'),
     'database': os.getenv('DB_NAME', 'sales_dashboard'),
@@ -12,8 +11,7 @@ DB_CONFIG = {
     'port': os.getenv('DB_PORT', '5432')
 }
 
-# For quick testing - set to True if PostgreSQL isn't working
-USE_SQLITE = False
+USE_SQLITE = False #for quick testing - set to True if PostgreSQL isn't working
 
 if USE_SQLITE:
     BASE_DIR = os.path.dirname(__file__)
