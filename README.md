@@ -1,10 +1,10 @@
-# 📊 Sales Dashboard (SQL + Python)
+# Sales Dashboard (SQL + Python)
 
 ![Python](https://img.shields.io/badge/Python-3.8+-blue.svg)  
 ![PostgreSQL](https://img.shields.io/badge/Database-PostgreSQL-blue.svg)
 ![License](https://img.shields.io/badge/License-MIT-lightgrey.svg)
 
-## 🚀 Project Overview
+## Project Overview
 
 A sales analytics dashboard built with Python and PostgreSQL. This project features an interactive Streamlit web interface, automated data visualizations, and robust SQL queries to analyze sales performance, track top products and customers, and generate insightful business reports. Perfect for learning database management, data visualization, and full-stack analytics development.
 
@@ -12,7 +12,7 @@ A sales analytics dashboard built with Python and PostgreSQL. This project featu
 
 ---
 
-## ⚡ Features
+## Features
 
 - Sales Analytics: Monthly sales trends, top products, and customer insights
 - Data Export: Generate CSV reports and visual charts for further analysis
@@ -21,7 +21,7 @@ A sales analytics dashboard built with Python and PostgreSQL. This project featu
 
 ---
 
-## 🛠️ Tech Stack
+## Tech Stack
 
 Backend: Python
 
@@ -41,7 +41,7 @@ Database Connection: Psycopg2
 
 ---
 
-## 🛠️ Installation & Setup
+## Installation & Setup
 
 ## Note:
 Make sure your PostgreSQL server is running before executing the scripts.
@@ -92,7 +92,7 @@ Make sure your PostgreSQL server is running before executing the scripts.
 
 ---
 
-## 🔮 Future Improvements
+## Future Improvements
 
 - **User Authentication**: Add login system for multiple users with role-based access
 - **Advanced Visualizations**: Integrate Plotly or D3.js for interactive charts
@@ -107,8 +107,8 @@ Make sure your PostgreSQL server is running before executing the scripts.
 
 ---
 
-## 🤝 Contributing
+## Contributing
 
-Feel free to submit issues and enhancement requests!
+Feel free to submit issues and enhancement requests.
 
 ---
