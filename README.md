@@ -48,7 +48,7 @@ Make sure your PostgreSQL server is running before executing the scripts.
 
 1. **Clone this repository**
    ```bash
-   git clone https://github.com/yourusername/sales-dashboard.git
+   git clone https://github.com/skipbaki/sales-dashboard.git
    cd sales-dashboard
    
 2. **Install dependencies**
