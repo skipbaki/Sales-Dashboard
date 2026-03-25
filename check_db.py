@@ -7,12 +7,11 @@ if USE_SQLITE:
     print(f"SQLite path: {DB_PATH}")
 else:
     print("PostgreSQL config:", DB_CONFIG)
-    
-    # Test PostgreSQL connection
+
     try:
         import psycopg2
         conn = psycopg2.connect(**DB_CONFIG)
-        print("PostgreSQL connection successful!")
+        print("PostgreSQL connection successful")
         conn.close()
     except Exception as e:
         print(f"PostgreSQL connection failed: {e}")
