@@ -11,7 +11,7 @@ DB_CONFIG = {
     'port': os.getenv('DB_PORT', '5432')
 }
 
-USE_SQLITE = False #for quick testing - set to True if PostgreSQL isn't working
+USE_SQLITE = True
 
 if USE_SQLITE:
     BASE_DIR = os.path.dirname(__file__)
