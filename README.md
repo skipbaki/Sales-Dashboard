@@ -6,7 +6,7 @@
 
 ## Project Overview
 
-A sales analytics dashboard built with Python and PostgreSQL. This project features an interactive Streamlit web interface, automated data visualizations, and SQL queries to analyze sales performance, track top products and customers, and generate insightful business reports. I made this project specially for beginners to learn database management, data visualization, and full-stack analytics development with SQL + Python.
+A sales analytics dashboard built with Python and SQL Lite. This project features an interactive Streamlit web interface, automated data visualizations, and SQL queries to analyze sales performance, track top products and customers, and generate insightful business reports. I made this project specially for beginners to learn database management, data visualization, and full-stack analytics development with SQL + Python.
 
 ---
 
