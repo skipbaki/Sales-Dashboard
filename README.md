@@ -23,7 +23,7 @@ A sales analytics dashboard built with Python and PostgreSQL. This project featu
 
 Backend: Python
 
-Database: PostgreSQL
+Database: SQL Lite
 
 Visualization: Matplotlib
 
